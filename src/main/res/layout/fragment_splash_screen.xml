@@ -1,0 +1,47 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mikelarsenis.mlarsen.budgettracker.SplashScreenFragment">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Background">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pigContainer"
+            android:layout_marginTop="150dp">
+
+            <FrameLayout
+                android:layout_width="225dp"
+                android:layout_height="200dp"
+                android:background="@drawable/pig_foreground"
+                android:id="@+id/pig"
+                android:layout_gravity="center">
+
+            </FrameLayout>
+        </FrameLayout>
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:indeterminate="true"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp" />
+
+    </LinearLayout>
+
+</FrameLayout>
